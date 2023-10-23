@@ -10,7 +10,7 @@ body {
 }
 
 .wrapper {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   background: #ffffff;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
@@ -28,7 +28,7 @@ main {
 }
 
 .main-description {
-  width: 500px;
+  max-width: 500px;
 }
 
 .job-title {
@@ -57,7 +57,7 @@ h1 {
 }
 
 .projects {
-  width: 485px;
+  max-width: 485px;
   margin-bottom: 51px;
   color: #fb6d3a;
 }
@@ -122,7 +122,7 @@ a.list-primary:hover {
 }
 
 .work-experience-block {
-  width: 525px;
+  max-width: 525px;
 }
 
 .university-name {
@@ -156,11 +156,12 @@ a.list-primary:hover {
 }
 
 aside {
-  width: 370px;
+  max-width: 370px;
   background: #1e2939;
 }
 
 .cv-photo {
+  max-width: 370px;
   margin-top: 40px;
 }
 
@@ -224,4 +225,38 @@ header {
   line-height: 14px;
   color: #fb6d3a;
   text-align: justify;
+}
+
+@media screen and (max-width: 1030px) {
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  aside {
+    max-width: 250px;
+  }
+  .cv-photo {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrap-pos {
+    flex-direction: column-reverse;
+  }
+  aside {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    padding: 20px;
+  }
 }
