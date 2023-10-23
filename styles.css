@@ -259,4 +259,11 @@ header {
   main {
     padding: 20px;
   }
+
+  .contact-block,
+  .tech-skills-block,
+  .soft-skills-block {
+    margin-top: 10px;
+    margin-left: 0;
+  }
 }
