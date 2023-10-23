@@ -227,6 +227,10 @@ header {
   text-align: justify;
 }
 
+.aside-title {
+  display: none;
+}
+
 @media screen and (max-width: 1030px) {
   .project-container {
     display: flex;
@@ -265,5 +269,14 @@ header {
   .soft-skills-block {
     margin-top: 10px;
     margin-left: 0;
+  }
+
+  .main-title {
+    text-align: center;
+  }
+
+  .aside-title {
+    display: block;
+    color: #fb6d3a;
   }
 }
